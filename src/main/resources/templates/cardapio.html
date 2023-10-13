@@ -1,0 +1,19 @@
+{{> header}}
+
+<div class="container">
+    <h1>Cardápio</h1>
+
+    <div class="card-grid">
+        {{#foods}}
+            <div class="card">
+                <img src="{{image}}" alt="{{title}}" />
+                <h2>{{title}}</h2>
+                <p><b>Valor: {{price}}</b></p>
+            </div>
+        {{/foods}}
+    </div>
+
+    <button>Cadastrar</button>
+</div>
+
+{{> endfile}}
