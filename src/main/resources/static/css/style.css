@@ -104,3 +104,13 @@ button:focus-visible {
     width: 250px;
     width: 250px;
 }
+.card h2 {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+    color: #039;
+    margin: 4px 0;
+    text-transform: capitalize;
+}
+.card p {
+    color: #aaa;
+}

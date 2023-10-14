@@ -4,19 +4,27 @@ Projeto SpringBoot utilizando linguagem Kotlin, com Gradle e mustache para criar
 
 [//]: # (
 {
-    "title": "hamburguer",
-    "price": 13,
-    "image": "https://imgs.search.brave.com/xO4CCbxNDOnGFmC4_JyXumTMaw4CvMedrvXcQgvoQ-o/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ndWlh/ZG9oYW1idXJndWVy/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wNS81MC1v/c25pci05NjB4OTYw/LmpwZw"
+"title": "hamburguer",
+"price": 13,
+"image": "https://imgs.search.brave.com/xO4CCbxNDOnGFmC4_JyXumTMaw4CvMedrvXcQgvoQ-o/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9ndWlh/ZG9oYW1idXJndWVy/LmNvbS93cC1jb250/ZW50L3VwbG9hZHMv/MjAyMi8wNS81MC1v/c25pci05NjB4OTYw/LmpwZw"
 }
+
 {
-    "title": "batata frita",
-    "price": 8,
-    "image": "https://imgs.search.brave.com/mHiuJwhcSr6Tcy9ttQP5j878ofLJomO_Mbkdp_RptB0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jb250/ZXVkby5pbWd1b2wu/Y29tLmJyL2MvZW50/cmV0ZW5pbWVudG8v/MTQvMjAyMS8xMS8w/My92YWktdGVyLWNo/dXJyYXMtLS1iYXRh/dGEtZnJpdGEtMTYz/NTk1OTc1MzkxMV92/Ml83NTB4NDIxLmpw/Zw"
+"title": "batata frita",
+"price": 8,
+"image": "https://storage.googleapis.com/domain-images/bc04cf0a-6206-450b-8dc4-2b4f1b1e8eef/products/gallery_fb062c5f-9fc4-4760-8f92-584fb9a256be.jpg"
 }
+
 {
-    "title": "pizza",
-    "price": 36,
-    "image": "https://static.itdg.com.br/images/1200-630/c0402ec0fd16e13c7b7b691151d53e1d/277814-original.jpg"
+"title": "pizza",
+"price": 36,
+"image": "https://www.thecountrycook.net/wp-content/uploads/2022/05/thumbnail-Smoked-Pepperoni-Pizza-500x500.jpg"
+}
+
+{
+"title": "Cachorro quente",
+"price": 12,
+"image": "https://meupaocaseiro.com.br/wp-content/uploads/2022/06/Design-sem-nome-4-1024x1024.jpg"
 }
 {
     "title": "",
