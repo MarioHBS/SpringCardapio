@@ -4,8 +4,8 @@ data class FoodResponseDTO(
     val id: Long = 0,
     var title: String,
     var image: String,
-    var price: String,
-    )
+    var price: Int
+)
 
 data class FoodRequestDTO(
     var title: String = "",

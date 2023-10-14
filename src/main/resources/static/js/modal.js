@@ -6,11 +6,6 @@ function open_modal(doc) {
 };
 
 function save_close_modal(doc) {
-    // const title = document.getElementById('in_title').value;
-    // console.log('nome: ' + title);
-    // const price = document.getElementById('in_price').value;
-    // const img = document.getElementById('in_img').value;
-
     var form = document.getElementById("fm01");
     var formData = new FormData(form);
     var formDataObject = {};
@@ -20,30 +15,37 @@ function save_close_modal(doc) {
         formDataObject[key] = value;
     });
 
-    var jsonData = JSON.stringify(formDataObject);
-    // Configurar o cabeçalho
-    var headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-
     var requestOptions = {
         method: 'POST',
-        headers: headers,
-        body: jsonData
+        mode: 'cors', // permitir acesso a um domínio diferente
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formDataObject)
     };
 
+    var responseClone;
     fetch('/food', requestOptions)
-    .then(response => response.json())
+    .then(function (response) {
+        responseClone = response.clone();
+        return response.json()
+    })
     .then(data => {
         console.log(data);
-        location.reload();
-//        modal.style.display = 'none';
+//        alert(data);
+        conclude_with_modal()
     })
     .catch(err => {
-        console.error(err);
+        console.log("Error parsing JSON from response: ", err, responseClone);
+        responseClone.text()
+        .then(bodyText => {
+            console.log('Received the following instead of valid JSON: ', bodyText);
+        })
     });
     // form.requestSubmit();
 };
 
-function teste(doc) {
-    alert('teste')
+function conclude_with_modal() {
+    location.reload();
+    modal.style.display = 'none';
 };
