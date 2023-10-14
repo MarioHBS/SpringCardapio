@@ -11,7 +11,6 @@ function save_close_modal(doc) {
     // const price = document.getElementById('in_price').value;
     // const img = document.getElementById('in_img').value;
 
-    // modal.style.display = 'none';
     var form = document.getElementById("fm01");
     var formData = new FormData(form);
     var formDataObject = {};
@@ -32,10 +31,12 @@ function save_close_modal(doc) {
         body: jsonData
     };
 
-    fetch('http://localhost:8080/food', requestOptions)
+    fetch('/food', requestOptions)
     .then(response => response.json())
     .then(data => {
         console.log(data);
+        location.reload();
+//        modal.style.display = 'none';
     })
     .catch(err => {
         console.error(err);
