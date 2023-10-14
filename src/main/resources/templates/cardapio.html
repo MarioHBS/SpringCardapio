@@ -11,9 +11,24 @@
                 <p><b>Valor: {{price}}</b></p>
             </div>
         {{/foods}}
+
+        <div id="md01" class="modal-overlay">
+            <div class="modal-body">
+                <h2>Cadastre um novo intem no cardápio</h2>
+                <form id="fm01" class="input-container">
+                    <label for="title">Nome:</label>
+                    <input id="in_title" type="text" name="title" />
+                    <label for="price">Preço:</label>
+                    <input id="in_price" type="number" name="price" value="0" min="0" />
+                    <label for="image">Imagem:</label>
+                    <input id="in_img" type="text" name="image" />
+                </form>
+                <button class="btn-secondary" onclick="save_close_modal(this)">Salvar</button>
+            </div>
+        </div>
     </div>
 
-    <button>Cadastrar</button>
+    <button onclick="open_modal(this)">Cadastrar</button>
 </div>
 
 {{> endfile}}
